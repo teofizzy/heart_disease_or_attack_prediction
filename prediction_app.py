@@ -280,7 +280,12 @@ def main():
                                              Diabetes, PhysActivity, Fruits, Veggies, HvyAlcoholConsump,
                                              AnyHealthcare, NoDocbcCost, GenHlth, MentHlth,
                                              PhysHlth, DiffWalk, Sex, Age, Education, Income)
-        st.success(diagnosis)
+        
+        if diagnosis == 'has heart disease':
+            st.warning(diagnosis)
+        else:
+            st.success(diagnosis)
+    
 
 if __name__ == '__main__':
     main()
